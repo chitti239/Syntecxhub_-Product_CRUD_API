@@ -1,7 +1,7 @@
 # Syntecxhub_-Product_CRUD_API
 
 A RESTful API built using **Node.js, Express, and MongoDB** that allows users to perform CRUD operations on products.
-It includes filtering, pagination, and proper error handling.
+It includes filtering, pagination, and proper error handling a separate image upload endpoint using Multer.
 
 ---
 
@@ -18,7 +18,8 @@ It includes filtering, pagination, and proper error handling.
 * ✅ Error handling
 * ✅ Clean folder structure
 
----
+* ✅ Separate image upload endpoint
+
 
 ## 🛠 Tech Stack
 
@@ -27,6 +28,7 @@ It includes filtering, pagination, and proper error handling.
 * MongoDB
 * dotenv
 * CORS
+* Multer (for file uploads)
 
 ---
 
@@ -36,14 +38,17 @@ It includes filtering, pagination, and proper error handling.
 server/
 │── models/
 │     └── Product.js
+│     └── File.js
 │
 │── routes/
 │     ├── product.js
+│     ├── file.js
 │     └── Allroutes.js
 │
 │── server.js
 │── .env
 │── package.json
+│── uploads/
 ```
 
 ---
@@ -91,6 +96,16 @@ http://localhost:5000
 * Pagination using skip & limit
 * Proper HTTP status codes
 * Error handling for invalid/missing resources
+* Multer for file uploads
+
+---
+
+## 🖼️ Image Upload (Separate Endpoint)
+
+Images are uploaded using a dedicated endpoint.The uploaded image will be stored in the `uploads/` directory. You can access it via:
+
+```http://localhost:5000/uploads/image.jpg
+```
 
 ## 👩‍💻 Author
 

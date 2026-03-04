@@ -13,6 +13,8 @@ app.use(express.json());
 const allRoutes = require("./routes/Allroutes");
 app.use("/api", allRoutes);
 
+app.use("/uploads", express.static("uploads"));
+
 mongoose
   .connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB Connected"))
