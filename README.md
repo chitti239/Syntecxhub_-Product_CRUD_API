@@ -1,7 +1,7 @@
 # Syntecxhub_-Product_CRUD_API
 
 A RESTful API built using **Node.js, Express, and MongoDB** that allows users to perform CRUD operations on products.
-It includes filtering, pagination, and proper error handling a separate image upload endpoint using Multer.
+It includes filtering, pagination, proper error handling, and a separate image upload endpoint using Multer.
 
 ---
 
