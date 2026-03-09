@@ -58,7 +58,7 @@ server/
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone <your-repo-link>
+git clone https://github.com/chitti239/Syntecxhub_Product_CRUD_API
 cd server
 ```
 
